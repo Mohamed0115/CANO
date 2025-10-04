@@ -95,7 +95,7 @@ def show_researcher():
 
                 # Step 1: Train
                 result = subprocess.run(
-                    ["python", train_script],
+                    [sys.executable, train_script],
                     capture_output=True, text=True, check=True
                 )
                 st.success("✅ Training completed")
