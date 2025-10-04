@@ -42,7 +42,7 @@ Place your screenshots in a `screenshots/` folder in the repo root and link them
 ![Transit Game3](learning_hub.png)
 
 ### 📊 Model Evaluation
-![Evaluation Metrics](screenshots/eval_metrics.png)
+![Evaluation Metrics](eval_metrics.png)
 
 ---
 
