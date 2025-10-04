@@ -1,36 +1,14 @@
-#numpy
-#pandas==2.2.2
-#scikit-learn
-#scipy
-#lightgbm
-#tsfresh
-#lightkurve
-#matplotlib
-#seaborn
-#joblib
-#streamlit
-#shap
-#plotly
-seaborn
-# Core Scientific Stack
+numpy
 pandas==2.2.2
-numpy==1.26.4
-scipy==1.13.1
-scikit-learn==1.4.2
-joblib==1.4.2
-
-# ML / AI
-lightgbm==4.3.0
-shap==0.44.1
-tsfresh==0.20.2
-
-# Astronomy tools
-lightkurve==2.4.0
-
-# Visualization
-matplotlib==3.9.0
-seaborn==0.13.2
-plotly==5.24.1
-
-# Web app
-streamlit==1.38.0
+scikit-learn
+scipy
+lightgbm
+tsfresh
+lightkurve
+matplotlib
+seaborn
+joblib
+streamlit
+shap
+plotly
+seaborn
