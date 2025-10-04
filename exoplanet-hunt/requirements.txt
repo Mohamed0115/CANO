@@ -1,5 +1,6 @@
 numpy
 pandas
+plotly
 scikit-learn
 scipy
 lightgbm
@@ -10,5 +11,5 @@ seaborn
 joblib
 streamlit
 shap
-plotly
 seaborn
+plotly
