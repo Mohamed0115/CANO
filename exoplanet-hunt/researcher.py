@@ -86,6 +86,16 @@ def show_researcher():
         with st.spinner("Training and evaluating model... ⏳"):
             try:
                 # Train
+                
+
+                repo_root = os.path.dirname(os.path.abspath(__file__))
+
+                train_script = os.path.join(repo_root, "train_classifier.py")
+                eval_script = os.path.join(repo_root, "evaluate_model.py")
+
+                subprocess.run(["python", train_script], check=True)
+                subprocess.run(["python", eval_script], check=True)
+
                 result = subprocess.run(
                     ["python", "train_classifier.py"],
                     capture_output=True, text=True, check=True
