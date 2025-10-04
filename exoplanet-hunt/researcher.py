@@ -5,6 +5,7 @@ import joblib
 import os
 import shutil
 import subprocess
+import sys
 
 repo_root = os.path.dirname(os.path.abspath(__file__))
 default_dataset = os.path.join(repo_root, "data", "processed", "all_catalogs.csv")
@@ -102,7 +103,7 @@ def show_researcher():
 
                 # Step 2: Evaluate
                 eval_result = subprocess.run(
-                    ["python", eval_script],
+                    [sys.executable, eval_script],
                     capture_output=True, text=True, check=True
                 )
                 st.success("📊 Evaluation complete")
