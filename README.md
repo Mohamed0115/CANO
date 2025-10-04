@@ -34,10 +34,12 @@ This project bridges professionals and novices, making **space exploration acces
 Place your screenshots in a `screenshots/` folder in the repo root and link them here 👇
 
 ### 🔬 Researcher Dashboard
-![Researcher Dashboard](screenshots/researcher_dashboard.png)
+![Researcher Dashboard](researcher_dashboard.png)
 
 ### 🌍 Curious Explorer – Transit Game
-![Transit Game](screenshots/curious_game.png)
+![Transit Game](Game1.png)
+![Transit Game2](Game2.png)
+![Transit Game3](learning_hub.png)
 
 ### 📊 Model Evaluation
 ![Evaluation Metrics](screenshots/eval_metrics.png)
