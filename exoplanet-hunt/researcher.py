@@ -88,33 +88,27 @@ def show_researcher():
     if st.button("🔄 Run Training + Evaluation "):
         with st.spinner("Training and evaluating model... ⏳"):
             try:
-                # Train
-                
-
                 repo_root = os.path.dirname(os.path.abspath(__file__))
-
                 train_script = os.path.join(repo_root, "train_classifier.py")
                 eval_script = os.path.join(repo_root, "evaluate_model.py")
 
-                subprocess.run(["python", train_script], check=True)
-                subprocess.run(["python", eval_script], check=True)
-
+                # Step 1: Train
                 result = subprocess.run(
-                    ["python", "train_classifier.py"],
+                    ["python", train_script],
                     capture_output=True, text=True, check=True
                 )
                 st.success("✅ Training completed")
                 st.text_area("Training Log", result.stdout, height=200)
 
-                # Evaluate
+                # Step 2: Evaluate
                 eval_result = subprocess.run(
-                    ["python", "evaluate_model.py"],
+                    ["python", eval_script],
                     capture_output=True, text=True, check=True
                 )
                 st.success("📊 Evaluation complete")
                 st.text_area("Evaluation Log", eval_result.stdout, height=200)
 
-                # Refresh plots
+                # Step 3: Refresh plots
                 st.subheader("📈 Updated Evaluation Plots")
                 for pf in plot_files.values():
                     if os.path.exists(pf):
@@ -123,6 +117,7 @@ def show_researcher():
             except subprocess.CalledProcessError as e:
                 st.error("❌ Training/Evaluation failed!")
                 st.text_area("Error Log", e.stderr, height=300)
+
     # Back to Home Button
     if st.button("🏠 Back to Home"):
         st.session_state["mode"] = "home"
