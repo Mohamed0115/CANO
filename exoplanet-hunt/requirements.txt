@@ -1,5 +1,5 @@
 numpy
-pandas==2.2.2
+pandas
 scikit-learn
 scipy
 lightgbm
