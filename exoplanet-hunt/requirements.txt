@@ -10,3 +10,5 @@ seaborn
 joblib
 streamlit
 shap
+plotly
+seaborn
