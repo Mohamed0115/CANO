@@ -6,6 +6,9 @@ import os
 import shutil
 import subprocess
 
+repo_root = os.path.dirname(os.path.abspath(__file__))
+default_dataset = os.path.join(repo_root, "data", "processed", "all_catalogs.csv")
+
 def show_researcher():
     st.title("🔬 Researcher Dashboard")
     st.write("Upload datasets, retrain the model, and view statistics.")
