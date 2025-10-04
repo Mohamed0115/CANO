@@ -102,10 +102,9 @@ exoplanet-hunt/
 
 ## 🛰 Credits & Resources
 
-- [NASA Exoplanet Archive](https://exoplanetarchive.ipac.caltech.edu/)  
-- [Kepler Objects of Interest](https://exoplanetarchive.ipac.caltech.edu/docs/KOI_KOI_table.html)  
-- [TESS Objects of Interest](https://exoplanetarchive.ipac.caltech.edu/docs/TOI_TOI_table.html)  
-- [K2 Mission Data](https://exoplanetarchive.ipac.caltech.edu/docs/K2.html)  
+- [Kepler Objects of Interest](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=cumulative)  
+- [TESS Objects of Interest](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=TOI)  
+- [K2 Mission Data](https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=k2pandc)  
 
 ---
 
